@@ -2,21 +2,22 @@
 .footer {
    padding: 60px 0;
    background-color: #2f303a;
-   .footer-box {
+
+   &__box {
       display: flex;
       align-items: baseline;
-      .footer-content {
-         margin-right: 70px;
-         .footer-logo {
-            display: block;
-            color: var(--primary-white-color);
-            margin-bottom: 20px;
-         }
-      }
+   }
+   &__content {
+      margin-right: 70px;
+   }
+   &__logo {
+      display: block;
+      color: var(--primary-white-color);
+      margin-bottom: 20px;
    }
 }
 
-.footer-link {
+.footer__link {
    margin-bottom: 9px;
    font-size: 14px;
    font-style: normal;
@@ -26,7 +27,7 @@
    &:last-child {
       margin-bottom: 0;
    }
-   .address {
+   .footer__address {
       text-decoration: inherit;
       color: var(--primary-white-color);
    }
@@ -42,32 +43,17 @@
    }
 }
 
-.footer .footer-social-list {
+.footer__social--list {
    align-items: flex-start;
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
-
-   .footer-social-title {
-      font-size: 14px;
-      line-height: 1.14;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-      color: var(--primary-white-color);
-   }
 }
-
-.footer .team-social-link {
-   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.footer .team-social-icon {
-   fill: var(--primary-white-color);
-}
-
-.team-social-link:hover,
-.team-social-link:focus {
-   background-color: var(--accent-color);
-   transition: var(--transition-property);
+.footer__social--title {
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+   color: var(--primary-white-color);
 }
