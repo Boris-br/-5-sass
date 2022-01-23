@@ -1,40 +1,39 @@
-.section-title {
-   font-weight: 700;
-   font-size: 36px;
-   line-height: 1.16;
-   text-align: center;
-   letter-spacing: 0.03em;
-   color: var(--secondary-text-color);
-}
 .providing {
    padding-top: 0px;
-}
+   .providing-box {
+      .section-title {
+         font-weight: 700;
+         font-size: 36px;
+         line-height: 1.16;
+         text-align: center;
+         letter-spacing: 0.03em;
+         color: var(--secondary-text-color);
+      }
 
-.providing-discription {
-   display: flex;
-}
-
-.providing-card {
-   position: relative;
-   margin-right: 30px;
-}
-
-.providing-card-description {
-   position: absolute;
-   bottom: 0;
-   padding: 27px 0;
-   width: 370px;
-   height: 70px;
-   font-weight: 700;
-   font-size: 14px;
-   line-height: 1.14;
-   text-align: center;
-   text-transform: uppercase;
-   letter-spacing: 0.03em;
-   color: var(--primary-white-color);
-   background-color: rgba(47, 48, 58, 0.8);
-}
-
-.providing-card:last-child {
-   margin-right: 0;
+      .providing-discription {
+         display: flex;
+         .providing-card {
+            position: relative;
+            margin-right: 30px;
+            &:last-child {
+               margin-right: 0;
+            }
+            .providing-card-description {
+               position: absolute;
+               bottom: 0;
+               padding: 27px 0;
+               width: 370px;
+               height: 70px;
+               font-weight: 700;
+               font-size: 14px;
+               line-height: 1.14;
+               text-align: center;
+               text-transform: uppercase;
+               letter-spacing: 0.03em;
+               color: var(--primary-white-color);
+               background-color: rgba(47, 48, 58, 0.8);
+            }
+         }
+      }
+   }
 }

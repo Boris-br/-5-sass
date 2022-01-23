@@ -15,10 +15,9 @@
    background-position: 50% 50%;
    background-size: cover;
    background-repeat: no-repeat;
-}
-
-.banner__title {
-   padding: 30px;
+   &__title {
+      padding: 30px;
+   }
 }
 
 .button {

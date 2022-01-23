@@ -15,10 +15,10 @@
    letter-spacing: 0.03em;
    text-decoration: none;
    color: #000000;
+}
 
-   &__highlight {
-      color: var(--accent-color);
-   }
+.logo__highlight {
+   color: var(--accent-color);
 }
 
 .nav {

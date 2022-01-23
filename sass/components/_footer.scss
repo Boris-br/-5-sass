@@ -2,41 +2,60 @@
 .footer {
    padding: 60px 0;
    background-color: #2f303a;
-}
-
-.footer-content {
-   margin-right: 70px;
-}
-.footer .logo {
-   display: block;
-   color: var(--primary-white-color);
-   margin-bottom: 20px;
-}
-
-.footer .address {
-   font-size: 14px;
-   font-style: normal;
-   line-height: 1.71;
-   letter-spacing: 0.03em;
-   text-decoration: none;
-   color: var(--primary-white-color);
-}
-
-.footer .email,
-.footer .tel {
-   font-size: 14px;
-   font-style: normal;
-   line-height: 1.71;
-   letter-spacing: 0.03em;
-   text-decoration: none;
-   color: rgba(255, 255, 255, 0.6);
+   .footer-box {
+      display: flex;
+      align-items: baseline;
+      .footer-content {
+         margin-right: 70px;
+         .footer-logo {
+            display: block;
+            color: var(--primary-white-color);
+            margin-bottom: 20px;
+         }
+      }
+   }
 }
 
 .footer-link {
    margin-bottom: 9px;
+   font-size: 14px;
+   font-style: normal;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+   text-decoration: none;
+   &:last-child {
+      margin-bottom: 0;
+   }
+   .address {
+      text-decoration: inherit;
+      color: var(--primary-white-color);
+   }
+   .email,
+   .tel {
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: inherit;
+      &:hover,
+      &:focus {
+         color: var(--accent-color);
+         transition: var(--transition-property);
+      }
+   }
 }
-.footer-link:last-child {
-   margin-bottom: 0;
+
+.footer .footer-social-list {
+   align-items: flex-start;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+
+   .footer-social-title {
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      color: var(--primary-white-color);
+   }
 }
 
 .footer .team-social-link {
@@ -45,35 +64,6 @@
 
 .footer .team-social-icon {
    fill: var(--primary-white-color);
-}
-
-.footer-social-title {
-   font-size: 14px;
-   line-height: 1.14;
-   letter-spacing: 0.03em;
-   text-transform: uppercase;
-   margin-bottom: 20px;
-   color: var(--primary-white-color);
-}
-
-.footer .footer-social-list {
-   align-items: flex-start;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-}
-
-.footer-box {
-   display: flex;
-   align-items: baseline;
-}
-
-.footer .email:hover,
-.footer .tel:hover,
-.footer .email:focus,
-.footer .tel:focus {
-   color: var(--accent-color);
-   transition: var(--transition-property);
 }
 
 .team-social-link:hover,
